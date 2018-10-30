@@ -11,8 +11,10 @@ int main(int argc, char *argv[])
 	int ret;
 	char *ptr = (char*)malloc(len*2);
 	char *de_out = (char*)malloc(len*2);
-    memset(ptr, 0, len * 2);
-    memset(de_out, 0, len * 2);
+	
+    	memset(ptr, 0, len * 2);
+    	memset(de_out, 0, len * 2);
+	
 	ret = Base64Encode(str_or,len,ptr,len*2);
 	cout<<"Encode("<<ret<<"):"<<ptr<<endl;
 	
